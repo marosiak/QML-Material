@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>material/Button.qml</file>
+        <file>material/PaperRipple.qml</file>
+    </qresource>
+</RCC>
