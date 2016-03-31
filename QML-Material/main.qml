@@ -1,29 +1,20 @@
 import QtQuick 2.6
 import QtQuick.Controls 1.5
+import QtGraphicalEffects 1.0
 import "material"
 
 ApplicationWindow {
-    id: applicationWindow1
+    id: window // must be window
     visible: true
     width: 640
-    height: 491
+    height: 492
     title: qsTr("Hello World")
-
-    ColorButton {
-        id: colorButton1
-        x: 12
-        y: 11
-        z: 0
-        rotation: 0
-        transformOrigin: Item.Center
-    }
-
     Card {
         id: card1
-        x: 96
-        y: 137
-        width: 362
-        height: 182
+        x: 92
+        y: 132
+        width: 363
+        height: 151
         anchors.verticalCenterOffset: 0
         anchors.horizontalCenterOffset: 0
         anchors.horizontalCenter: parent.horizontalCenter
@@ -31,8 +22,8 @@ ApplicationWindow {
 
         Button {
             id: button1
-            x: 291
-            y: 141
+            x: 292
+            y: 114
             width: 56
             height: 25
             buttonText: "Agree"
@@ -40,8 +31,8 @@ ApplicationWindow {
 
         Button {
             id: button2
-            x: 216
-            y: 141
+            x: 211
+            y: 114
             width: 69
             height: 25
             buttonText: "Disagree"
@@ -49,23 +40,32 @@ ApplicationWindow {
 
         MatText {
             id: matText1
-            x: 23
-            y: 45
-            width: 324
+            x: 12
+            y: 42
+            width: 334
             type: "body"
-            height: 90
+            height: 59
             matText: "Lorem Ipsum Jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki."
         }
 
         MatText {
             id: matText2
-            x: 23
-            y: 16
-            width: 226
+            x: 12
+            y: 12
+            width: 334
             height: 19
             type: qsTr("title")
             matText: "Title here"
         }
     }
 
+    FloatingButton {
+        id: floatingButton1
+        anchors.right: parent.right
+        anchors.rightMargin: 14
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 14
+    }
+    ToolBar {}
+    LeftCard {}
 }

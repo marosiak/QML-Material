@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.5
 
 Item {
     width: 100
@@ -9,13 +9,14 @@ Item {
     Component.onCompleted: {
         if(type == "header"){
             textColor = "#212121"
-            tekst.font.pointSize = "13";
+            tekst.font.pointSize = "14";
             tekst.font.bold = false;
         }
         if(type == "title"){
-            textColor = "#212121"
+            textColor = "#727272"
             tekst.font.pointSize = "11";
             tekst.font.bold = true;
+            tekst.verticalAlignment = Text.AlignVCenter
         }
         if(type == "body"){
             textColor = "#727272"
@@ -36,6 +37,7 @@ Item {
         id: tekst
         text: matText
         wrapMode: Text.WordWrap
+        color: textColor
         width: parent.width
         height: parent.height
         font.family: robotoMedium.name

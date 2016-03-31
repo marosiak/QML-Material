@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>MainForm.ui.qml</file>
         <file>material/Button.qml</file>
         <file>material/PaperRipple.qml</file>
         <file>fonts/Roboto-Light.ttf</file>
@@ -9,5 +8,12 @@
         <file>material/ColorButton.qml</file>
         <file>material/Card.qml</file>
         <file>material/MatText.qml</file>
+        <file>material/FloatingButton.qml</file>
+        <file>material/Spacer.qml</file>
+        <file>material/ToolBar.qml</file>
+        <file>material/ListItem.qml</file>
+        <file>material/icons/class.png</file>
+        <file>material/icons/menu.png</file>
+        <file>material/LeftCard.qml</file>
     </qresource>
 </RCC>
